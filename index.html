@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Finance Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Personal Finance Dashboard</h1>
+    <div class="input-section">
+      <input type="text" id="desc" placeholder="Description" />
+      <input type="number" id="amount" placeholder="Amount" />
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button onclick="addEntry()">Add</button>
+    </div>
+    <div class="summary">
+      <p>Total Income: ₹<span id="income">0</span></p>
+      <p>Total Expense: ₹<span id="expense">0</span></p>
+      <p>Balance: ₹<span id="balance">0</span></p>
+    </div>
+    <ul id="history"></ul>
+    <canvas id="chart" width="400" height="200"></canvas>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

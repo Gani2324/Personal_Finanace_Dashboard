@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.input-section input, .input-section select {
+  padding: 0.5rem;
+  margin: 0.5rem 0.2rem;
+}
+button {
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.summary p {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+#history {
+  list-style: none;
+  padding: 0;
+}
+#history li {
+  background: #eee;
+  margin: 0.3rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
